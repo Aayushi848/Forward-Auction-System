@@ -1,0 +1,113 @@
+/* Login.css */
+
+.login-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 6rem;
+  object-fit: contain;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+.login-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  text-align: start;
+}
+
+.login-label {
+  display: block;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.login-input,
+.login-select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.login-input:focus,
+.login-select:focus {
+  border-color: #456182;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+}
+
+.login-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #456182;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.login-button:hover {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  color: #456182;
+  
+}
+.google-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom:20px;
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.login-divider span {
+  padding: 0 10px;
+  background: white; /* Use white (or your container background) to "cut" through the line */
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}

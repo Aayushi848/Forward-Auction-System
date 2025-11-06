@@ -1,0 +1,40 @@
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 70s linear infinite;
+  will-change: transform;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+.bodycard-container {
+  max-width: 1200px; /* similar to Tailwind's container max width */
+  margin-left: auto;
+  margin-right: auto;
+   /* my-4 equivalent (16px) */
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 0.5rem; /* rounded-lg equivalent (8px) */
+}
+.bodycard-inner {
+  background-color: #f9fafb;
+  box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.375rem;
+  padding: 0.5rem 1.25rem;
+  overflow: hidden;
+  height: 44px; /* Increase this as needed for vertical height */
+  display: flex;
+  align-items: center;
+  border-radius: 0.375rem; /* rounded-md */
+  
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

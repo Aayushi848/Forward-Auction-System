@@ -1,0 +1,172 @@
+/* FindBidderPage.css */
+
+.find-bidder-page {
+ margin-top:20px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.find-bidder-page h2 {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Filter Inputs */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-section input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 180px;
+}
+
+.filter-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.filter-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Select All */
+.select-all {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Table */
+.bidder-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bidder-table th,
+.bidder-table td {
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.bidder-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.bidder-table tbody tr:hover {
+  background-color: #f1f9ff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Add Button */
+.find-bidder-page button:last-of-type {
+  padding: 10px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.find-bidder-page button:last-of-type:hover {
+  background-color: #218838;
+}
+.table-actions-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+.table-actions-wrapper .add-btn {
+  position: absolute;
+  top: -50px; /* adjust based on spacing */
+  right: 0;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table-actions-wrapper .add-btn:hover {
+  background-color: #218838;
+}
+.bidder-list-wrapper {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fefefe;
+  border-radius: 8px;
+
+  overflow-x: auto;
+  overflow-y: auto;
+
+  max-width: 1000px;
+  max-height: 500px;
+
+  box-sizing: border-box;
+}
+
+.bidder-list-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.bidder-list-table th,
+.bidder-list-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.table-actions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto 10px auto;
+  box-sizing: border-box;
+}
+/*.bidder-list-wrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}*/
+
