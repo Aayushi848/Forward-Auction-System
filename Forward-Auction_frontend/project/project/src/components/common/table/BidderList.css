@@ -1,0 +1,210 @@
+.bidder-page-container {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  border-radius:0px;
+  
+}
+.bidder-list-page h2 {
+  font-size: 20px;         /* Match with Item List/Create Auction */
+  margin-bottom:0px;                  /* Add 10px space between heading and hr */
+  padding: 10px 0;     
+  font-weight: 600;        /* Optional: for consistent emphasis */
+  font-family: sans-serif; /* Ensure consistent font */
+  box-sizing: border-box;
+  border-radius:0px;
+}
+
+.bidder-list-page hr {
+  margin-bottom: 20px;     /* Space after divider before the table */
+  border: none;
+  border-top: 1px solid #ccc;
+  border-radius:0px;
+}
+.bidder-list-page{
+  border-radius:0px;
+}
+
+/*.breadcrumb {
+  margin-bottom: 20px;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.breadcrumb span {
+  font-size: 14px;
+}
+.home {
+  color: #007bff;
+  font-weight: 600;
+
+.divider {
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+.active-page {
+  font-weight: 500;
+  
+}
+}*/
+.bidder-list-section {
+  background: white;
+  padding: 20px;
+ 
+
+  /* ✨ Thin border + subtle shadow */
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-radius:0px;
+
+  
+}
+
+.bidder-list-section h2 {
+  font-size: 20px;
+  border-radius:0px;
+ 
+}
+
+.bidder-table-wrapper {
+  overflow-x: auto;
+  border-radius: 0px;
+}
+
+.bidder-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d5db; /* ✨ Thin outer border */
+  border-radius:0px;
+}
+
+.bidder-list-page .bidder-table th,
+.bidder-list-page .bidder-table td {
+  padding: 8px 16px;
+  border: 1px solid  #636466;
+  text-align: left;
+  white-space: nowrap;
+  border-radius:0px;
+}
+table.bidder-table th,
+table.bidder-table td{
+  padding:8px 16px ;
+  border: 1px solid  #636466;
+  text-align: left;
+  white-space: nowrap;
+  border-radius:0px;
+}
+
+
+.bidder-table th {
+  background-color: #D4DDE8;
+  color: #636466;
+  font-weight: 600;
+  font-size: 14px;
+  
+}
+.bidder-table td{
+  background-color: #ffffff;
+  font-size: 14px;
+}
+.bidder-table tr:hover td{
+   background-color: #f9fafb;
+}
+.remove-btn {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.remove-btn:hover {
+  color: darkred;
+}
+.add-bidder-btn {
+  background-color: #456182;
+  color: white;
+  width: 148px;        /* fixed width */
+  height: 35px;
+ Display: flex;
+ justify-content:center;
+ align-items: center; 
+  border: 2px solid #456182;
+  cursor: pointer;
+  font-weight: 500;
+   box-sizing: border-box;
+   
+}
+.add-bidder-btn:hover {
+  background-color: #ffffff;
+  color:#1a2036;
+ 
+  border: 2px solid #456182;
+
+}
+.button-group{
+padding-top:7px;
+padding-bottom:7px;
+padding-right:10px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px; /* reduced gap between buttons */
+}
+.submit-reset-btn {
+  background-color: #456182;
+  color: white;
+  width: 148px;
+  height: 35px;
+  padding: 10px;
+  border: 2px solid #456182;
+  cursor: pointer;
+  font-weight: 500;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-reset-btn:hover {
+  background-color: white;
+  color: #456182;
+}
+.pagination-btn {
+  background-color: #456182;
+  color: white;
+  width: 148px;
+  height: 35px;
+  padding: 10px;
+  border: 2px solid #456182;
+  cursor: pointer;
+  font-weight: 500;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-btn:hover {
+  background-color: white;
+  color: #456182;
+}
+.pagination-button-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* aligns buttons to the right */
+  align-items: center;
+  gap: 5px; /* spacing between buttons */
+  margin-top: 10px; /* spacing from table above if needed */
+}
+.current-page-text {
+  padding: 4px 4px; /* same as button for visual alignment */
+  height: 35px;
+  width: 5px; /* optional fixed width if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+

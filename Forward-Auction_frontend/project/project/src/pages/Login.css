@@ -1,0 +1,133 @@
+/* Login.css */
+.login-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.login-footer {
+  margin-top: auto;
+}
+.login-header-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-header-top {
+background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.login-header-top .left i {
+  margin-right: 6px;
+  color: #456182;
+}
+
+.login-header-top .right span {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #456182;
+  font-weight: 500;
+}
+
+.login-header-bottom {
+    background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:70px;
+  
+}
+
+.login-header-bottom img {
+  height: 60px;
+}
+
+.download-btn {
+  background-color: #456182;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+/*login dropdown*/
+.login-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.login-dropdown-menu {
+  position: absolute;
+  top: 100%; /* just below the login text */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 150px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: none; /* initially hidden */
+}
+
+.login-dropdown-menu.show {
+  display: block;
+}
+
+.login-dropdown-menu div {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+}
+
+.login-dropdown-menu div:hover {
+  background-color: #f0f0f0;
+}
+.slider-wrapper {
+    width:1000px;
+    height: 350px; 
+  display: flex;
+  justify-content: center;
+  padding-top:20px;
+
+  margin: auto; /* Adjust as needed */
+}
+.login-footer {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 16px 0;
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+.centered-login-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #456182; /* Tailwind's blue-600 */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+  z-index: 10;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.centered-login-button:hover {
+  background-color: #456182; /* Tailwind's blue-700 */
+}

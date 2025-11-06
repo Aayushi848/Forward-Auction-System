@@ -1,0 +1,44 @@
+# === Node modules (frontend + backend) ===
+Forward-Auction_frontend/project/project/node_modules/
+Forward-Auction_frontend/backend/node_modules/
+
+# === Build and cache directories ===
+Forward-Auction_frontend/project/project/dist/
+Forward-Auction_frontend/project/project/build/
+Forward-Auction_frontend/project/project/.vite/
+Forward-Auction_frontend/project/project/.cache/
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# === Environment variables ===
+Forward-Auction_frontend/backend/.env
+Forward-Auction_frontend/project/project/.env
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# === OS-specific files ===
+.DS_Store
+Thumbs.db
+
+# === IDE/editor files ===
+.vscode/
+.idea/
+*.swp
+
+# === Misc ===
+*.pid
+*.seed
+*.tgz
+
+# === Dependency locks (optional; uncomment if you don’t want them) ===
+# Forward-Auction_frontend/backend/package-lock.json
+# Forward-Auction_frontend/project/project/package-lock.json

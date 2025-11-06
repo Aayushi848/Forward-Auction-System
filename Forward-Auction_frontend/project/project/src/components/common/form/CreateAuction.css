@@ -1,0 +1,255 @@
+.form-container {
+  font-family: sans-serif;
+  background-color: #eeeeee;
+  width : 100%;
+  max-width : 100%;
+  overflow-x: hidden;
+}
+.bidder-list-container{
+   width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom:20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  transition: padding-left 0.3s ease;
+}
+.sidebar-open .bidder-list-container {
+  padding-left: 20px;
+}
+.sidebar-closed .bidder-list-container {
+  padding-left: 80px;
+}
+
+
+.home {
+  color: #1a2036;
+  font-weight: 600;
+}
+
+.divider {
+  margin-top: 10px;
+ 
+}
+
+.active-page {
+  font-weight: 500;
+}
+
+.form-section {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+.form-section h3 {
+  
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  overflow-x: hidden;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(33.33% - 20px);
+  min-width:0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.form-group-header {
+ display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.form-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.form-group-header select{
+  width: 80px;
+  padding: 6px; /* smaller padding for header selects */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+.form-group-header label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top:4px;
+  margin-bottom:4px;
+  
+}
+.form-group-header input {
+  padding: 6px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top:4px;
+  margin-bottom:4px;
+
+}
+.form-group label {
+  margin-top:10px;
+  font-size:14px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  margin-top:4px;
+  margin-bottom:4px;
+  width:100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+
+}
+
+.checkbox-group {
+  display: flex;
+
+  margin-right: 20px;
+  margin-top:10px;
+ 
+  flex-wrap: wrap;
+  gap: 15px;
+  
+ 
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.add-bidder-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.add-bidder-btn:hover {
+  background-color: #0056b3;
+}
+.button-group-alt {
+  padding-top:7px;
+  padding-bottom:7px;
+  padding-right:10px;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* reduced gap between buttons */
+}
+.breadcrumb-section {
+  background: white;
+  padding:10px;
+  padding-left: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+.active-page {
+  color: #446181; /* Tailwind blue-500 or your brand blue */
+  font-weight:bold ; /* optional: make it stand out slightly */
+}
+.breadcrumb-section .home {
+  font-weight: normal;
+  cursor: pointer;
+}
+.bottom-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; bottom: 0; }
+  10% { opacity: 1; bottom: 20px; }
+  90% { opacity: 1; bottom: 20px; }
+  100% { opacity: 0; bottom: 0; }
+}
+/*for file upload*/
+.uploaded-files-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.uploaded-file-chip {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+}
+
+.uploaded-file-chip span {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.remove-file-btn {
+  margin-left: 8px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  color: black; /* Changed from #666 to black */
+}
+
+.remove-file-btn:hover {
+  color: red;
+}
+/*custom for read only input form groups*/
+.read-only-select {
+  background-color: #f5f5f5;
+  color: #999; /* changes text color */
+  cursor: not-allowed;
+  position: relative;
+}
+.read-only-select option:disabled {
+  color: #bbb;
+  font-style: italic;
+}
+
+.live-auction-table * {
+  font-size: 10.7px !important;
+}
